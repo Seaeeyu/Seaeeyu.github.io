@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="คฑาวุธ มังเดชะ - Portfolio สำหรับสมัครงานในสาย IT">
+    <meta property="og:title" content="คฑาวุธ มังเดชะ - Portfolio">
+    <meta property="og:description" content="Portfolio ส่วนตัวสำหรับสมัครงานในสายไอที">
+    <meta property="og:type" content="website">
+    <title>คฑาวุธ มังเดชะ - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-text">คฑ</span>
+            </a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#about" class="nav-link">เกี่ยวกับ</a></li>
+                <li><a href="#skills" class="nav-link">ทักษะ</a></li>
+                <li><a href="#experience" class="nav-link">ประสบการณ์</a></li>
+                <li><a href="#portfolio" class="nav-link">ผลงาน</a></li>
+                <li><a href="#contact" class="nav-link">ติดต่อ</a></li>
+                <li>
+                    <a href="user_input_files/Super Resume _ Reflect your talent and get a better job.pdf" 
+                       class="nav-btn resume-btn" 
+                       target="_blank" 
+                       download>
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                            <polyline points="7 10 12 15 17 10"/>
+                            <line x1="12" y1="15" x2="12" y2="3"/>
+                        </svg>
+                        ดาวน์โหลดเรซูเม่
+                    </a>
+                </li>
+            </ul>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <p class="hero-greeting">สวัสดีครับ, ผมชื่อ</p>
+                <h1 class="hero-name">คฑาวุธ มังเดชะ</h1>
+                <h2 class="hero-title">นักพัฒนาซอฟต์แวร์ / นักศึกษาฝึกงานสายไอที</h2>
+                <p class="hero-description">
+                    ผมเป็นคนที่มุ่งมั่นในการพัฒนาตนเอง มีความสามารถในการทำงานร่วมกับผู้อื่น 
+                    และพร้อมเรียนรู้สิ่งใหม่อย่างรวดเร็ว กำลังมองหาโอกาสในการเริ่มต้นอาชีพในสาย IT
+                </p>
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="btn btn-primary">
+                        ดูผลงาน
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        ติดต่อฉัน
+                    </a>
+                </div>
+                <div class="hero-social">
+                    <a href="mailto:khathawut.mdc@gmail.com" class="social-link" aria-label="Email">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <polyline points="22,6 12,13 2,6"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                            <rect x="2" y="9" width="4" height="12"/>
+                            <circle cx="4" cy="4" r="2"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="GitHub">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="avatar-container">
+                    <div class="avatar-placeholder">
+                        <span>คฑ</span>
+                    </div>
+                    <div class="avatar-ring"></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>เลื่อนลงเพื่อดูเพิ่มเติม</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">เกี่ยวกับฉัน</h2>
+                <p class="section-subtitle">ทำความรู้จักฉันให้มากขึ้น</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-card">
+                        <div class="about-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                <circle cx="12" cy="7" r="4"/>
+                            </svg>
+                        </div>
+                        <h3>ข้อมูลส่วนตัว</h3>
+                        <ul class="info-list">
+                            <li><strong>ชื่อ-นามสกุล:</strong> คฑาวุธ มังเดชะ</li>
+                            <li><strong>อายุ:</strong> 21 ปี</li>
+                            <li><strong>สัญชาติ:</strong> ไทย</li>
+                            <li><strong>ที่อยู่:</strong> วัฒนา, กรุงเทพมหานคร</li>
+                            <li><strong>เบอร์โทร:</strong> 096-759-8313</li>
+                            <li><strong>อีเมล:</strong> khathawut.mdc@gmail.com</li>
+                            <li><strong>ขับรถได้:</strong> มีรถยนต์ส่วนตัว</li>
+                        </ul>
+                    </div>
+                    <div class="about-card">
+                        <div class="about-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                            </svg>
+                        </div>
+                        <h3>จุดแข็งของฉัน</h3>
+                        <ul class="strength-list">
+                            <li>
+                                <span class="strength-icon">✓</span>
+                                <span>เป็นผู้ฟังที่ดี สามารถรับฟังความคิดเห็นของผู้อื่นได้อย่างเข้าใจ</span>
+                            </li>
+                            <li>
+                                <span class="strength-icon">✓</span>
+                                <span>มีความขยัน ทำงานหนักอย่างไม่ย่อท้อ</span>
+                            </li>
+                            <li>
+                                <span class="strength-icon">✓</span>
+                                <span>มีบุคลิกภาพที่เข้ากับคนอื่นได้ง่าย ชอบทำงานเป็นทีม</span>
+                            </li>
+                            <li>
+                                <span class="strength-icon">✓</span>
+                                <span>มีความรับผิดชอบ ทำงานให้สำเร็จตามกำหนดเวลา</span>
+                            </li>
+                            <li>
+                                <span class="strength-icon">✓</span>
+                                <span>พร้อมเรียนรู้สิ่งใหม่และพัฒนาตนเองอย่างต่อเนื่อง</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <div class="stat-number">01+</div>
+                        <div class="stat-label">ปีของประสบการณ์</div>
+                        <div class="stat-desc">การศึกษาและฝึกงานในสายไอที</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">5+</div>
+                        <div class="stat-label">ทักษะหลัก</div>
+                        <div class="stat-desc">ทักษะด้านการเขียนโปรแกรมและภาษา</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">ความมุ่งมั่น</div>
+                        <div class="stat-desc">พร้อมทุ่มเทให้กับงานที่ได้รับมอบหมาย</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">ทักษะความสามารถ</h2>
+                <p class="section-subtitle">ความสามารถด้านต่างๆ ที่ฉันมี</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <div class="skill-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="16 18 22 12 16 6"/>
+                                <polyline points="8 6 2 12 8 18"/>
+                            </svg>
+                        </div>
+                        <h3>ทักษะด้านโปรแกรม</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-pill">
+                            <span class="skill-name">HTML/CSS</span>
+                            <span class="skill-level">เริ่มต้น</span>
+                        </div>
+                        <div class="skill-pill">
+                            <span class="skill-name">JavaScript</span>
+                            <span class="skill-level">เริ่มต้น</span>
+                        </div>
+                        <div class="skill-pill">
+                            <span class="skill-name">Python</span>
+                            <span class="skill-level">เริ่มต้น</span>
+                        </div>
+                        <div class="skill-pill">
+                            <span class="skill-name">SQL</span>
+                            <span class="skill-level">เริ่มต้น</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <div class="skill-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <line x1="2" y1="12" x2="22" y2="12"/>
+                                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                            </svg>
+                        </div>
+                        <h3>ภาษา</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-pill">
+                            <span class="skill-name">ไทย</span>
+                            <span class="skill-level">ดี</span>
+                        </div>
+                        <div class="skill-pill">
+                            <span class="skill-name">อังกฤษ</span>
+                            <span class="skill-level">เริ่มต้น</span>
+                        </div>
+                        <div class="skill-pill">
+                            <span class="skill-name">ญี่ปุ่น</span>
+                            <span class="skill-level">เริ่มต้น</span>
+                        </div>
+                        <div class="skill-pill">
+                            <span class="skill-name">เกาหลี</span>
+                            <span class="skill-level">เริ่มต้น</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <div class="skill-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                            </svg>
+                        </div>
+                        <h3>ทักษะทั่วไป</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-pill">
+                            <span class="skill-name">การทำงานเป็นทีม</span>
+                            <span class="skill-level">ดี</span>
+                        </div>
+                        <div class="skill-pill">
+                            <span class="skill-name">การสื่อสาร</span>
+                            <span class="skill-level">ดี</span>
+                        </div>
+                        <div class="skill-pill">
+                            <span class="skill-name">การแก้ปัญหา</span>
+                            <span class="skill-level">ดี</span>
+                        </div>
+                        <div class="skill-pill">
+                            <span class="skill-name">การจัดการเวลา</span>
+                            <span class="skill-level">ดี</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <div class="skill-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                                <line x1="8" y1="21" x2="16" y2="21"/>
+                                <line x1="12" y1="17" x2="12" y2="21"/>
+                            </svg>
+                        </div>
+                        <h3>เครื่องมือและซอฟต์แวร์</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-pill">
+                            <span class="skill-name">Microsoft Office</span>
+                            <span class="skill-level">ดี</span>
+                        </div>
+                        <div class="skill-pill">
+                            <span class="skill-name">Git</span>
+                            <span class="skill-level">เริ่มต้น</span>
+                        </div>
+                        <div class="skill-pill">
+                            <span class="skill-name">VS Code</span>
+                            <span class="skill-level">เริ่มต้น</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">ประสบการณ์และการศึกษา</h2>
+                <p class="section-subtitle">เส้นทางการเรียนรู้และพัฒนาของฉัน</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <span class="timeline-date">ปัจจุบัน</span>
+                            <span class="timeline-badge">กำลังศึกษา</span>
+                        </div>
+                        <h3 class="timeline-title">นักศึกษาสาขาวิทยาการคอมพิวเตอร์</h3>
+                        <p class="timeline-company">สถาบันการศึกษาในกรุงเทพมหานคร</p>
+                        <ul class="timeline-details">
+                            <li>กำลังศึกษาอยู่ในระดับปริญญาตรี สาขาวิทยาการคอมพิวเตอร์</li>
+                            <li>เรียนรู้พื้นฐานด้านการเขียนโปรแกรม ฐานข้อมูล และการพัฒนาซอฟต์แวร์</li>
+                            <li>มีผลการเรียนที่ดีและมีความสนใจในการพัฒนาตนเองอย่างต่อเนื่อง</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <span class="timeline-date">2566 - 2567</span>
+                            <span class="timeline-badge">ฝึกงาน</span>
+                        </div>
+                        <h3 class="timeline-title">นักศึกษาฝึกงานสายไอที</h3>
+                        <p class="timeline-company">บริษัทในกรุงเทพมหานคร</p>
+                        <ul class="timeline-details">
+                            <li>ได้รับประสบการณ์การทำงานจริงในสาย IT</li>
+                            <li>เรียนรู้กระบวนการทำงานในองค์กรและการทำงานเป็นทีม</li>
+                            <li>พัฒนาทักษะการสื่อสารและการแก้ปัญหาในสถานการณ์จริง</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <span class="timeline-date">2565</span>
+                            <span class="timeline-badge">กิจกรรม</span>
+                        </div>
+                        <h3 class="timeline-title">กิจกรรมการเรียนรู้และพัฒนาตนเอง</h3>
+                        <p class="timeline-company">กิจกรรมต่างๆ</p>
+                        <ul class="timeline-details">
+                            <li>เข้าร่วมอบรมและสัมมนาด้านเทคโนโลยีสารสนเทศ</li>
+                            <li>ศึกษาหาความรู้เพิ่มเติมด้วยตนเองผ่านออนไลน์คอร์ส</li>
+                            <li>พัฒนาโปรเจกต์ส่วนตัวเพื่อสร้างประสบการณ์ในการเขียนโปรแกรม</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">ผลงานและโปรเจกต์</h2>
+                <p class="section-subtitle">ผลงานที่ฉันได้สร้างและพัฒนามา</p>
+            </div>
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">ทั้งหมด</button>
+                <button class="filter-btn" data-filter="web">เว็บไซต์</button>
+                <button class="filter-btn" data-filter="app">แอปพลิเคชัน</button>
+                <button class="filter-btn" data-filter="other">อื่นๆ</button>
+            </div>
+            <div class="portfolio-grid" id="portfolio-grid">
+                <!-- Portfolio items will be dynamically loaded -->
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                                <line x1="3" y1="9" x2="21" y2="9"/>
+                                <line x1="9" y1="21" x2="9" y2="9"/>
+                            </svg>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-links">
+                                <a href="#" class="portfolio-link" aria-label="ดูเว็บไซต์">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                        <polyline points="15 3 21 3 21 9"/>
+                                        <line x1="10" y1="14" x2="21" y2="3"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="portfolio-link" aria-label="ดูโค้ด">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category">เว็บไซต์</span>
+                        <h3 class="portfolio-title">เว็บไซต์ส่วนตัว Portfolio</h3>
+                        <p class="portfolio-desc">เว็บไซต์สำหรับแนะนำตัวเองและแสดงผลงาน ออกแบบให้ responsive และเป็นมืออาชีพ</p>
+                        <div class="portfolio-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                                <line x1="3" y1="9" x2="21" y2="9"/>
+                                <line x1="9" y1="21" x2="9" y2="9"/>
+                            </svg>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-links">
+                                <a href="#" class="portfolio-link" aria-label="ดูเว็บไซต์">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                        <polyline points="15 3 21 3 21 9"/>
+                                        <line x1="10" y1="14" x2="21" y2="3"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="portfolio-link" aria-label="ดูโค้ด">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category">เว็บไซต์</span>
+                        <h3 class="portfolio-title">ระบบจัดการข้อมูลนักเรียน</h3>
+                        <p class="portfolio-desc">ระบบ CRUD สำหรับจัดการข้อมูลนักเรียน พร้อมระบบค้นหาและกรองข้อมูล</p>
+                        <div class="portfolio-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">SQL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="app">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+                                <line x1="12" y1="18" x2="12" y2="18"/>
+                            </svg>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-links">
+                                <a href="#" class="portfolio-link" aria-label="ดูแอปพลิเคชัน">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                        <polyline points="15 3 21 3 21 9"/>
+                                        <line x1="10" y1="14" x2="21" y2="3"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="portfolio-link" aria-label="ดูโค้ด">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category">แอปพลิเคชัน</span>
+                        <h3 class="portfolio-title">เครื่องคิดเลข BMI</h3>
+                        <p class="portfolio-desc">แอปพลิเคชันสำหรับคำนวณดัชนีมวลกาย พร้อมแนะนำการรักษาสุขภาพ</p>
+                        <div class="portfolio-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">GUI</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="other">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                <polyline points="14 2 14 8 20 8"/>
+                                <line x1="16" y1="13" x2="8" y2="13"/>
+                                <line x1="16" y1="17" x2="8" y2="17"/>
+                                <polyline points="10 9 9 9 8 9"/>
+                            </svg>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-links">
+                                <a href="#" class="portfolio-link" aria-label="ดูโปรเจกต์">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                        <polyline points="15 3 21 3 21 9"/>
+                                        <line x1="10" y1="14" x2="21" y2="3"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="portfolio-link" aria-label="ดูโค้ด">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category">อื่นๆ</span>
+                        <h3 class="portfolio-title">โปรแกรมจัดการไฟล์</h3>
+                        <p class="portfolio-desc">สคริปต์สำหรับจัดการและจัดระเบียบไฟล์ในเครื่องอย่างอัตโนมัติ</p>
+                        <div class="portfolio-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Automation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">ติดต่อฉัน</h2>
+                <p class="section-subtitle">พร้อมรับฟังและติดต่อกลับ</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h3>อีเมล</h3>
+                            <a href="mailto:khathawut.mdc@gmail.com">khathawut.mdc@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h3>โทรศัพท์</h3>
+                            <a href="tel:0967598313">096-759-8313</a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h3>ที่อยู่</h3>
+                            <p>วัฒนา, กรุงเทพมหานคร</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="mailto:khathawut.mdc@gmail.com" class="social-btn" aria-label="Email">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                            <span>Email</span>
+                        </a>
+                        <a href="#" class="social-btn" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                <rect x="2" y="9" width="4" height="12"/>
+                                <circle cx="4" cy="4" r="2"/>
+                            </svg>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="#" class="social-btn" aria-label="GitHub">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                            </svg>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">ชื่อ-นามสกุล</label>
+                            <input type="text" id="name" name="name" placeholder="กรุณากรอกชื่อ-นามสกุล" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">อีเมล</label>
+                            <input type="email" id="email" name="email" placeholder="กรุณากรอกอีเมล" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">หัวข้อ</label>
+                            <input type="text" id="subject" name="subject" placeholder="หัวข้อที่ต้องการติดต่อ" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">ข้อความ</label>
+                            <textarea id="message" name="message" rows="5" placeholder="กรุณากรอกข้อความ" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="22" y1="2" x2="11" y2="13"/>
+                                <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                            </svg>
+                            ส่งข้อความ
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">คฑ</span>
+                    <span class="footer-name">คฑาวุธ มังเดชะ</span>
+                </div>
+                <p class="footer-text">ขอบคุณที่เยี่ยมชม Portfolio ของฉัน หวังว่าจะได้มีโอกาสร่วมงานกันในอนาคต</p>
+                <div class="footer-links">
+                    <a href="#about">เกี่ยวกับ</a>
+                    <a href="#skills">ทักษะ</a>
+                    <a href="#experience">ประสบการณ์</a>
+                    <a href="#portfolio">ผลงาน</a>
+                    <a href="#contact">ติดต่อ</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 คฑาวุธ มังเดชะ. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
